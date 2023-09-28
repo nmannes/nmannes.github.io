@@ -47,16 +47,14 @@
     {% endfor %}
   {% endif %}
 
-  {% if site.avatar and page.show-avatar != false %}
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a href="{{ '' | absolute_url }}">
-          <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
-        </a>
-      </div>
+  <div class="avatar-container">
+    <div class="avatar-img-border">
+      <a href="{{ '' | absolute_url }}">
+        <img id="n" alt="Navigation bar avatar" class="avatar-img" src="{{ site.n-icon }}" />
+        <img id="m" alt="Navigation bar avatar" class="avatar-img" src="{{ site.m-icon }}" style="display: none;"/>
+      </a>
     </div>
-  {% endif %}
-
+  </div>
 </nav>
 
 {% include search.html %}

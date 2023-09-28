@@ -36,3 +36,19 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<script>
+  var n = document.getElementById('n');
+  var m = document.getElementById('m');
+  var showN = true;
+  setInterval(() => {
+    if (showN){
+      n.style.display = '';
+      m.style.display = 'none';
+    } else {
+      n.style.display = 'none';
+      m.style.display = '';
+    }
+    showN = !showN;
+  },1100)  
+</script>
