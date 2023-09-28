@@ -20,11 +20,7 @@ author: Nathan Mannes
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://nathanmann.es"
+  Résumé: "/resume"
 
 ################
 # --- Logo --- #
@@ -51,14 +47,10 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "nmannes@gmail.com"
-  rss: false  # remove this line if you don't want to show an RSS link at the bottom
   github: nmannes
   linkedin: nathan-mannes
   instagram: nathan_mannes
-
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+  goodreads: "https://www.goodreads.com/user/show/48641482-nathan-mannes"
 
 ###########################
 # --- General options --- #
@@ -75,7 +67,7 @@ share-links-active:
 # Remove this if you don't want a link in the footer
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+excerpt_length: 11
 
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
