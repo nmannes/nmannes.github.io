@@ -21,6 +21,7 @@ author: Nathan Mannes
 
 navbar-links:
   About: "/about"
+  Contact Me: "/resume.pdf" 
   Résumé: "/resume.pdf"
 
 ################
