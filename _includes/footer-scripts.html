@@ -1,54 +1,60 @@
 {% if layout.common-ext-js %}
-  {% for js in layout.common-ext-js %}
-    {% include ext-js.html js=js %}
-  {% endfor %}
+{% for js in layout.common-ext-js %}
+{% include ext-js.html js=js %}
+{% endfor %}
 {% endif %}
 
 {% if layout.common-js %}
-  {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-        if (typeof jQuery == 'undefined') {
-          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
-        }
-      </script>
-    {% else %}
-      <script src="{{ js | relative_url }}"></script>
-    {% endif %}
-  {% endfor %}
+{% for js in layout.common-js %}
+<!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+{% if js contains 'jquery' %}
+<script>
+  if (typeof jQuery == 'undefined') {
+    document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
+  }
+</script>
+{% else %}
+<script src="{{ js | relative_url }}"></script>
+{% endif %}
+{% endfor %}
 {% endif %}
 
 {% if site.site-js %}
-  {% for js in site.site-js %}
-    <script src="{{ js | relative_url }}"></script>
-  {% endfor %}
+{% for js in site.site-js %}
+<script src="{{ js | relative_url }}"></script>
+{% endfor %}
 {% endif %}
 
 {% if page.ext-js %}
-  {% for js in page.ext-js %}
-    {% include ext-js.html js=js %}
-  {% endfor %}
+{% for js in page.ext-js %}
+{% include ext-js.html js=js %}
+{% endfor %}
 {% endif %}
 
 {% if page.js %}
-  {% for js in page.js %}
-    <script src="{{ js | relative_url }}"></script>
-  {% endfor %}
+{% for js in page.js %}
+<script src="{{ js | relative_url }}"></script>
+{% endfor %}
 {% endif %}
 
 <script>
   var n = document.getElementById('n');
   var m = document.getElementById('m');
+  var icon = document.getElementById('icon');
   var showN = true;
   setInterval(() => {
-    if (showN){
+    if (showN) {
       n.style.display = '';
       m.style.display = 'none';
+
+      icon.href = '/assets/img/m.png';
+
     } else {
       n.style.display = 'none';
       m.style.display = '';
+
+      icon.href = '/assets/img/n.png';
     }
     showN = !showN;
-  },1100)  
+  }, 750);
 </script>
