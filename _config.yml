@@ -15,12 +15,12 @@ title: Nathan Mannes
 # Your name to show in the footer
 author: Nathan Mannes
 
-description: Nathan Mannes is a software engineer
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
+  Tutoring: "/tutoring"
   About: "/about"
   Résumé (and contact info): "/resume.pdf"
 
