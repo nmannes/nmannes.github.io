@@ -38,21 +38,12 @@
 {% endif %}
 
 <script>
-  var n = document.getElementById('n');
-  var m = document.getElementById('m');
   var icon = document.getElementById('icon');
   var showN = true;
   setInterval(() => {
     if (showN) {
-      n.style.display = '';
-      m.style.display = 'none';
-
       icon.href = '/assets/img/n.png';
-
     } else {
-      n.style.display = 'none';
-      m.style.display = '';
-
       icon.href = '/assets/img/m.png';
     }
     showN = !showN;
