@@ -2,7 +2,9 @@
 layout: base
 ---
 
-{% include header.html type="page" %}
+{% unless page.hide-header %}
+  {% include header.html type="page" %}
+{% endunless %}
 
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
   <div class="row">
@@ -15,7 +17,9 @@ layout: base
         </div>
       {% endif %}
 
-      {{ content }}
+      <article class="page-content">
+        {{ content }}
+      </article>
 
       {% if page.after-content %}
         <div class="after-content">

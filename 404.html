@@ -1,13 +1,17 @@
 ---
-layout: default
-title: 404 - Page not found
+layout: page
+hide-header: true
+title: Page not found
 permalink: /404.html
+share-title: "Page not found — Nathan Mannes"
 ---
 
-<div class="text-center">
-  <h3>Why don't you check out my 
-    <a href="/resume.pdf">
-      resume?
-    </a>
-  </h3>
-</div>
+<section class="hero hero-404">
+  <p class="eyebrow">404</p>
+  <h1>Page not found.</h1>
+  <p class="lead">The page you're looking for isn't here — but the résumé is.</p>
+  <div class="hero-actions">
+    <a class="text-link" href="{{ '/' | relative_url }}">Back home <span aria-hidden="true">→</span></a>
+    <a class="text-link" href="{{ '/resume.pdf' | relative_url }}">Résumé <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

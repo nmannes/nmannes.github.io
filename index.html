@@ -1,45 +1,51 @@
 ---
 layout: home
-title: Hey, Nathan Here
-share-description: "Nathan Mannes, Software Engineer. He knows: PostgreSQL, NoSQL, Ruby on Rails, Go, Python, HTML, CSS, React.js"
+hide-header: true
+share-title: "Nathan Mannes — Software Engineer"
+share-description: "Nathan Mannes, software engineer in Washington, D.C. Currently at Capital One."
 ---
 
-<p>
-  I'm a software engineer by training, but I'm so so so much more than the
-  technologies that I've used at the companies that I've worked at.
-</p>
+<section class="hero">
+  <p class="eyebrow">Software engineer<span class="eyebrow-location"> · Washington, D.C.</span></p>
+  <h1>Hey, Nathan here.</h1>
+  <p class="lead">
+    I'm a software engineer by training, but I'm so so so much more than the
+    technologies that I've used at the companies that I've worked at.
+  </p>
+</section>
 
-<p>
-  That being said, my professional tech experience consists of (starting from the most recent):
-  <ul>
+<section class="experience" aria-labelledby="experience-label">
+  <h2 class="section-label" id="experience-label">Where I've worked</h2>
+
+  <ul class="company-list">
     <li>
-      <p>
-        <a href="https://www.capitalone.com">Capital One</a> (Python and Kotlin)
-      </p>
+      <span class="company-index" aria-hidden="true">01</span>
+      <a class="company" href="https://www.capitalone.com" target="_blank" rel="noopener">Capital One</a>
+      <span class="company-meta">Python · Kotlin</span>
     </li>
     <li>
-      <p>
-        <a href="https://academia.edu">Academia.edu</a> (Ruby on Rails, React)
-      </p>
+      <span class="company-index" aria-hidden="true">02</span>
+      <a class="company" href="https://academia.edu" target="_blank" rel="noopener">Academia.edu</a>
+      <span class="company-meta">Ruby on Rails · React</span>
     </li>
     <li>
-      <p>
-
-        <a href="https://sezzle.com">Sezzle</a> (Go and React)
-      </p>
+      <span class="company-index" aria-hidden="true">03</span>
+      <a class="company" href="https://sezzle.com" target="_blank" rel="noopener">Sezzle</a>
+      <span class="company-meta">Go · React</span>
     </li>
     <li>
-      <p>
-
-        <a href="https://www.factset.com">Factset</a> (Python and Vue.js)
-      </p>
+      <span class="company-index" aria-hidden="true">04</span>
+      <a class="company" href="https://www.factset.com" target="_blank" rel="noopener">Factset</a>
+      <span class="company-meta">Python · Vue.js</span>
     </li>
-  </ul> 
-</p>
+  </ul>
+</section>
 
-<style>
-  p {
-    font-size: x-large;
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-</style>
+<div class="hero-actions">
+  <a class="text-link" href="{{ '/resume.pdf' | relative_url }}">
+    Résumé <span aria-hidden="true">↗</span>
+  </a>
+  <a class="text-link" href="{{ '/about' | relative_url }}">
+    More about me <span aria-hidden="true">→</span>
+  </a>
+</div>
