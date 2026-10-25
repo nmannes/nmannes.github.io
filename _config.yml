@@ -20,7 +20,6 @@ author: Nathan Mannes
 ###############################################
 
 navbar-links:
-  Tutoring: "/tutoring"
   About: "/about"
   Résumé (and contact info): "/resume.pdf"
 
